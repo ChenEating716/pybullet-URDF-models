@@ -1,5 +1,6 @@
 # pybullet_URDF_models
-A URDF models collection, made for robot manipulation and grasping simulation. Tested with PyBullet.
+Collection of urdf models (part of it comes from YCB dataset).
+Made for robot manipulation and grasping simulation, tested with PyBullet.
 ## Usage
 
 Download with
