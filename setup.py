@@ -1,9 +1,3 @@
-'''
-Author: Yiting CHEN
-Date: 2021-10-22 09:59:41
-LastEditTime: 2021-10-22 10:25:42
-contact me through chenyiting@whu.edu.cn
-'''
 import os
 from setuptools import setup, find_packages
 
