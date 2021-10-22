@@ -51,7 +51,7 @@ pip3 install -e pybullet-URDF-models/
 import urdf_models.models_data as md
 
 # create model library
-models_lib = md.model_list()
+models_lib = md.model_lib()
 
 # get the name list of all models
 print(models_lib.model_name_list)
@@ -93,7 +93,7 @@ p.setTimeStep(1 / 240.)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
 # load urdf data
-models = models_data.model_list()
+models = models_data.model_lib()
 
 # load model list
 namelist = models.model_name_list

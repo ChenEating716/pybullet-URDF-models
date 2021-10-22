@@ -1,7 +1,7 @@
 '''
 Author: Yiting CHEN
 Date: 2021-10-22 01:15:14
-LastEditTime: 2021-10-22 11:21:52
+LastEditTime: 2021-10-22 17:36:40
 contact me through chenyiting716@gmail.com
 '''
 
@@ -9,7 +9,7 @@ import os
 import random
 
 
-class model_list(object):
+class model_lib(object):
     def __init__(self):
         self._model_path_list = []
         self._model_name_list = []
@@ -64,8 +64,8 @@ class model_list(object):
 # test
 """
 if __name__ == "__main__":
-    model = model_list()
-    print(model.model_name_list[10])
+    model = model_lib()
+    print(model.model_name_lib[10])
     print(model.random)
     print(model['pen_container_1'])
 """
