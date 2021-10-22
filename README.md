@@ -3,7 +3,7 @@ Collection of urdf models (**part of it comes from YCB dataset**).
 
 Made for robot manipulation and grasping simulation, tested with PyBullet.
 
-
+![example](./example.gif)
 
 
 
@@ -72,7 +72,7 @@ print(models_lib.random)
 
 
 
-![example](./example.gif)
+
 
 <img src="./example.png" alt="example" style="zoom:40%;" />
 
