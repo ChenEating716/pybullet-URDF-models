@@ -3,7 +3,7 @@ Collection of urdf models (part of it comes from YCB dataset).
 
 
 Made for robot manipulation and grasping simulation, tested with PyBullet.
-## Usage
+## Installation
 
 Download with
 
@@ -22,11 +22,37 @@ pip3 install -e pybullet-URDF-models/
 
 
 
+## Usage
+
+```python
+# import module
+import urdf_models.models_data import md
+
+# create model library
+models_lib = md.model_list()
+
+# check the name list of all model
+print(models_lib.model_name_list)
+
+# get the absolute path of all models in your computer
+print(models_lib.model_path_list)
+
+# find the corresponding abs path for desired model
+print(models_lib['knife'])
+
+# get random model file path
+print(models_lib.random)
+```
+
+
+
 ## Example
 
-![example](./example.png)
 
 
+![example](./example.gif)
+
+<img src="./example.png" alt="example" style="zoom:40%;" />
 
 
 
