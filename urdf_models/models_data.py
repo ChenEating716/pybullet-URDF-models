@@ -23,10 +23,11 @@ class model_list(object):
         filelist = os.listdir(self.dir)
         for i in range(0, len(filelist)):
             file_name = filelist[i]
-            self._model_name_list.append(file_name)
+            
             path = os.path.join(self.dir, file_name, 'model.urdf')
             if os.path.isfile(path):
                 self._model_path_list.append(os.path.realpath(path))
+                self._model_name_list.append(file_name)
 
     def load_data(self):
         if self._model_name_list and self._model_path_list:
