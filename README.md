@@ -1,26 +1,29 @@
 # pybullet_URDF_models
-Collection of urdf models (part of it comes from YCB dataset).
+Collection of urdf models (**part of it comes from YCB dataset**).
 
 Made for robot manipulation and grasping simulation, tested with PyBullet.
 
 
 
-This collection contains more than 90+ daily supplies urdf models, which can be encountered in kitchen, desk, workshop and dinner scenario.
+
+
+This collection contains more than **90+** daily supplies urdf models, which can be encountered in kitchen, desk, workshop and dinner scenario.
 
 The model data follows format below:
 
 ```
-models (dir)
-—— fork (dir)
-———— collision.obj
-———— model.urdf
-———— texture_map.png
-———— textured.obj
-———— textured.obj.mtl
-———— visual.ply
+urdf_models/
+—— models/ 
+———— fork/
+—————— collision.obj
+—————— model.urdf
+—————— texture_map.png
+—————— textured.obj
+—————— textured.obj.mtl
+—————— visual.ply
 ```
 
-You are also welcome to add your own models under the models directory follow the same format. Nothing more needs to be done.
+You are also welcome to add your own models under the urdf_models/models/ directory follow the same format. Nothing more needs to be done.
 
 ## Installation
 
