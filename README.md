@@ -49,3 +49,9 @@ while 1:
     time.sleep(1./240)
 ```
 
+
+
+## Acknowledgement
+
+URDF models are created from the data provided by Open Cloud Robot Table Organization Challenge ([OCRTOC](http://www.ocrtoc.org/)).  All credit goes to the organizers of OCRTOC.
+
