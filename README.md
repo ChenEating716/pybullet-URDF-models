@@ -1,6 +1,6 @@
 # pybullet_URDF_models
 A URDF models collection, made for robot manipulation and grasping simulation. Tested with PyBullet.
-## usage
+## Usage
 
 Download with
 
