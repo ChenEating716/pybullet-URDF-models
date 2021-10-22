@@ -26,12 +26,12 @@ pip3 install -e pybullet-URDF-models/
 
 ```python
 # import module
-import urdf_models.models_data import md
+import urdf_models.models_data as md
 
 # create model library
 models_lib = md.model_list()
 
-# check the name list of all model
+# check the name list of all models
 print(models_lib.model_name_list)
 
 # get the absolute path of all models in your computer
