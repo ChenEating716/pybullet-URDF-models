@@ -51,16 +51,16 @@ models = models_data.model_list()
 namelist = models.model_name_list
 print("Look at what we have {}".format(namelist))
 
-# randomly get a model
-random_model = namelist[random.randint(0, len(namelist))] 
-
 # Load table and plane
 p.loadURDF("plane.urdf")
 p.loadURDF("table/table.urdf")
 
 # load the randomly picked model
 flags = p.URDF_USE_INERTIA_FROM_FILE
-obj_id = p.loadURDF(models[random_model], [0., 0., 0.8], flags=flags)
+# randomly get a model
+for i in range(8):
+    random_model = namelist[random.randint(0, len(namelist))] 
+    p.loadURDF(models[random_model], [0., 0., 0.8 + 0.15*i], flags=flags)
 
 p.setGravity(0, 0, -9.8)
 
