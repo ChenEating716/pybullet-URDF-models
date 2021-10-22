@@ -31,7 +31,11 @@ import urdf_models.models_data as md
 # create model library
 models_lib = md.model_list()
 
+<<<<<<< HEAD
 # check the name list of all models
+=======
+# get the name list of all models
+>>>>>>> 7ce4a22417c3b3756e89de234629d562e3a363a4
 print(models_lib.model_name_list)
 
 # get the absolute path of all models in your computer
