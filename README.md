@@ -24,6 +24,12 @@ pip3 install -e pybullet-URDF-models/
 
 ## Example
 
+![example](./example.png)
+
+
+
+
+
 ```python
 import os
 import time
