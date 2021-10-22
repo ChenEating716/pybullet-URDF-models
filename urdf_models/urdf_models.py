@@ -8,12 +8,13 @@ contact me through chenyiting716@gmail.com
 import os
 import random
 
+
 class model_list(object):
     def __init__(self):
         self._model_path_list = []
         self._model_name_list = []
         self._model = {}
-        self.dir = os.getcwd() + '/models/'
+        self.dir = 'models'
 
         self.detect_models()
         self.load_data()
