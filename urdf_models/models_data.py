@@ -1,7 +1,7 @@
 '''
 Author: Yiting CHEN
 Date: 2021-10-22 01:15:14
-LastEditTime: 2021-10-22 09:54:18
+LastEditTime: 2021-10-22 11:21:52
 contact me through chenyiting716@gmail.com
 '''
 
@@ -14,8 +14,8 @@ class model_list(object):
         self._model_path_list = []
         self._model_name_list = []
         self._model = {}
-        self.dir = 'models'
-
+        self.dir = os.path.dirname(__file__) + '/models'
+        print("loading model from {}".format(self.dir))
         self.detect_models()
         self.load_data()
 
@@ -61,8 +61,10 @@ class model_list(object):
 
 
 # test
+"""
 if __name__ == "__main__":
     model = model_list()
     print(model.model_name_list[10])
     print(model.random)
     print(model['pen_container_1'])
+"""

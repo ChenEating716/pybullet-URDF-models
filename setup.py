@@ -16,26 +16,26 @@ hh = setup_py_dir + "/" + datadir
 for root, dirs, files in os.walk(hh):
   for fn in files:
     ext = os.path.splitext(fn)[1][1:]
-    if ext and ext in 'urdf sdf xml stl ini obj mtl png'.split(
+    if ext and ext in 'urdf obj mtl jpg'.split(
     ):
       fn = root + "/" + fn
       need_files.append(fn[1 + len(hh):])
 
 
 print("find_packages() \n {}".format(find_packages()))
-print("find_packages() \n {}".format(find_packages('ycb_objects_models_sim')))
+print("find_packages() \n {}".format(find_packages('urdf_models')))
 
 setup(
-  name="pybullet-object-models",
+  name="urdf_models",
   version="0.1",
-  author="Elena Rampone",
-  author_email="elena.rampone@iit.it",
-  description="URDF-SDF models of textured YCB objects for simulation",
-  license="LGPL",
+  author="Yiting CHEN",
+  author_email="chenyiting716@gmail.com",
+  description="A simple python module for convenient URDF model loading",
+  license="MIT",
   python_requires='>=3',
-  keywords="urdf sdf model object simulation pybullet",
+  keywords="pybullet urdf models",
   package_dir={'': '.'},
   packages=find_packages(),
-  package_data={'pybullet_object_models': need_files},
-  url="https://github.com/eleramp/pybullet-object-models",
+  package_data={'urdf_models': need_files},
+  url="https://github.com/ChenEating716/pybullet-URDF-models",
 )
