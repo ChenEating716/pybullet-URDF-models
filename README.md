@@ -123,3 +123,4 @@ while 1:
 
 URDF models are created from the data provided by Open Cloud Robot Table Organization Challenge ([OCRTOC](http://www.ocrtoc.org/)).  All credit goes to the organizers of OCRTOC.
 
+I do not claim copyright for any model files under this repo.
