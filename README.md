@@ -93,7 +93,7 @@ p.setTimeStep(1 / 240.)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
 # load urdf data
-models = models_data.model_list()
+models = models_data.model_lib()
 
 # load model list
 namelist = models.model_name_list
